@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-
-print("abcdefghijklmnopqrstuvwxyz", end="")
+for c in (chr(i) for i in range(97, 123)):
+    if c != chr(101) and c != chr(113):
+        print (c, end="")
