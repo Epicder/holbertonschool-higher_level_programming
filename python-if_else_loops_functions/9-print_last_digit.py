@@ -6,8 +6,9 @@ def print_last_digit(number):
     elif number < 0:
         numcpy = abs(number)
         lastnum = numcpy % 10
+        lastnum += 6
         print("{}".format(lastnum), end="")
     elif number > 0:
         lastnum = number % 10
         print("{}".format(lastnum), end="")
-    return number % 10        
+    return number % 10
