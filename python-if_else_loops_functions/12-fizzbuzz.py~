@@ -1,0 +1,12 @@
+#!/bin/usr/python3
+
+def fizzbuzz():
+    for numbers in range(101):
+        if(numbers % 3 == 0):
+            numbers = "Fizz"
+            print(f"{numbers}", end=" ")
+        elif(numbers % 5 == 0):
+            numbers = "Buzz"
+            print(f"{numbers}", end=" ")
+        print(f"{numbers}", end=" ")
+    
