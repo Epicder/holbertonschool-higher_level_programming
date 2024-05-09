@@ -6,10 +6,9 @@ def fizzbuzz():
         numcpyy = numbers % 5
         if (numcpy == 0 and numcpyy == 0):
             print("FizzBuzz", end=" ")
-        elif(numcpy == 0):
+        elif (numcpy == 0):
             print("Fizz", end=" ")
-        elif(numcpyy == 0):
+        elif (numcpyy == 0):
             print("Buzz", end=" ")
         else:
             print(f"{numbers}", end=" ")
-    
