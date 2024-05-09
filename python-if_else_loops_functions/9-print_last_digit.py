@@ -10,4 +10,4 @@ def print_last_digit(number):
     elif number > 0:
         lastnum = number % 10
         print("{}".format(lastnum), end="")
-    return number % 10 - 2        
+    return number % 10        
