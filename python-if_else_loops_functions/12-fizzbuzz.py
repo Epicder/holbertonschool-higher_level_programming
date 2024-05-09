@@ -4,7 +4,9 @@ def fizzbuzz():
     for numbers in range(1, 101):
         numcpy = numbers % 3
         numcpyy = numbers % 5
-        if(numcpy == 0):
+        if (numcpy == 0 and numcpyy == 0):
+            print("FizzBuzz", end=" ")
+        elif(numcpy == 0):
             print("Fizz", end=" ")
         elif(numcpyy == 0):
             print("Buzz", end=" ")
