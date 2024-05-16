@@ -1,0 +1,1 @@
+More task for types of structures in python
