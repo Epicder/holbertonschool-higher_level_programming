@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+
+def common_elements(set_1, set_2):
+    i = 0
+    while set_1 != set_2 and i < len(set_1) and i < len(set_2):
+        i += 1
+        if set_1[i] == set_2[i]:
+            common = set_1[i]
+
+    return common
