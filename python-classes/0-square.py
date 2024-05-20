@@ -3,6 +3,7 @@
 cuadrado
 '''
 
+
 class Square:
     '''logica
     '''

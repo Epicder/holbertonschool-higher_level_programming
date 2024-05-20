@@ -3,6 +3,7 @@
 Square: class
 '''
 
+
 class Square:
     ''' square
     '''
