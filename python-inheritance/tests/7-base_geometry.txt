@@ -1,0 +1,27 @@
+>>> from 7-base_geometry import BaseGeometry
+
+>>> # Test 1: Testing area() method
+>>> geometry = BaseGeometry()
+>>> try:
+...     geometry.area()
+... except Exception as e:
+...     print("Error:", e)
+Error: area() is not implemented
+
+>>> # Test 2: Testing integer_validator() method with valid integer value
+>>> geometry.integer_validator("side_length", 10)
+>>> # No error should be raised
+
+>>> # Test 3: Testing integer_validator() method with non-integer value
+>>> try:
+...     geometry.integer_validator("side_length", "10")
+... except Exception as e:
+...     print("Error:", e)
+Error: side_length must be an integer
+
+>>> # Test 4: Testing integer_validator() method with non-positive integer value
+>>> try:
+...     geometry.integer_validator("side_length", 0)
+... except Exception as e:
+...     print("Error:", e)
+Error: side_length must be greater than 0
