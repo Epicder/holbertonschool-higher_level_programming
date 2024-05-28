@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+
+"""appends text"""
+
+
+def append_write(filename="", text=""):
+    with open(filename, mode="a", encoding="utf-8") as mfile:
+        txt = mfile.write(text)
+        return txt
