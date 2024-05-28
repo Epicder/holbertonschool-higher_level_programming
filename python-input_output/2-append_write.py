@@ -4,6 +4,7 @@
 
 
 def append_write(filename="", text=""):
+    """code"""
     with open(filename, mode="a", encoding="utf-8") as mfile:
         txt = mfile.write(text)
         return txt
