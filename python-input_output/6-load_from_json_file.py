@@ -4,7 +4,7 @@
 import json
 
 
-def load_from_json_file(my_obj, filename):
+def load_from_json_file(filename):
     """code"""
     with open(filename, mode="r") as mfile:
-        json.load(my_obj, mfile)
+        json.load(mfile)
