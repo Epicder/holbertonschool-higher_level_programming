@@ -4,11 +4,11 @@ import pickle
 
 
 class CustomObject:
-    name
-    age
-    is_student
+    name = ""
+    age = None
+    is_student = None
 
-    def __init__(self, name="Jhon", age="25", is_student=True):
+    def __init__(self, name="Jhon", age=25, is_student=True):
         self.name = name
         self.age = age
         self.is_student = is_student
@@ -21,7 +21,7 @@ class CustomObject:
     def serialize(self, filename):
         try:
             with open(filename, 'wb') as pfile:
-                pickle.dump(self, file)
+                pickle.dump(self, pfile)
         except Exception as e:
             return None
 
