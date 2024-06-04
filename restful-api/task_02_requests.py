@@ -37,5 +37,5 @@ def fetch_and_save_posts():
             
             fields = ['id', 'title', 'body']
             writer = csv.DictWriter(csvfile, fieldnames=fields)
-    writer.writeheader()
-    writer.writerows(post_list)
+        writer.writeheader()
+        writer.writerows(post_list)
