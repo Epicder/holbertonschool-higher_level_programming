@@ -1,2 +1,2 @@
----Mostrar todas las bases de datos
+-- Mostrar todas las bases de datos
 SHOW DATABASES;
