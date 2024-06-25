@@ -15,3 +15,6 @@ def get_states():
         print(row)
     cur.close()
     conn.close()
+
+if __name__ == '__main__':
+    get_states()
