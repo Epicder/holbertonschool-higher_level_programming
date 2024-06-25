@@ -12,8 +12,9 @@ def get_states(username, password, database):
     conn = MySQLdb.connect(host="localhost", port=3306, user=username,
                            passwd=password, db=database, charset="utf8")
     cur = conn.cursor()
-    cur.execute("SELECT * FROM cities INNER JOIN states " +
-                "ON cities.state_id = states.id ORDER BY id ASC")
+    cur.execute("SELECT cities.id, cities.name, states.name " +
+                "FROM cities INNER JOIN states " +
+                "ON cities.state_id = states.id ORDER BY cities.id ASC")
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
