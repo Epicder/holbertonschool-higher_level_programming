@@ -13,7 +13,7 @@ def get_states(username, password, database, state_name):
                            passwd=password, db=database, charset="utf8")
     cur = conn.cursor()
     sqlcmd = ("SELECT * FROM states " +
-                "WHERE BINARY name LIKE %s ORDER BY id ASC")
+              "WHERE BINARY name LIKE %s ORDER BY id ASC")
     cur.execute(sqlcmd, (state_name,))
     query_rows = cur.fetchall()
     for row in query_rows:
