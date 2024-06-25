@@ -23,12 +23,9 @@ def get_states(username, password, database, state_name):
 
 
 if __name__ == '__main__':
-    """comment"""
-    if sys.argv != 5:
-        raise IndexError("out of range")
-    else:
-        username = sys.argv[1]
-        password = sys.argv[2]
-        database = sys.argv[3]
-        state_name = sys.argv[4]
-        get_states(username, password, database, state_name)
+
+    username = sys.argv[1]
+    password = sys.argv[2]
+    database = sys.argv[3]
+    state_name = sys.argv[4]
+    get_states(username, password, database, state_name)
