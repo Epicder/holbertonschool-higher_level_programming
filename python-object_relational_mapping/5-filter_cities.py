@@ -15,7 +15,7 @@ def get_states(username, password, database, state_name):
     sqlquery = ("SELECT cities.name FROM cities " +
                 "JOIN states ON cities.state_id = states.id " +
                 "WHERE states.name LIKE %s ORDER BY cities.id ASC")
-    
+
     cur.execute(sqlquery, (state_name,))
     query_rows = cur.fetchall()
     print(", ".join(a[0] for a in query_rows))
