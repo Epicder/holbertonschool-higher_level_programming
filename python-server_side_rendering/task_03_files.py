@@ -24,15 +24,17 @@ def read_json_file(file_path):
 def display_products():
     source = request.args.get('source')
     products = []
+    error = None
 
     if source == 'json':
         products = read_json_file('products.json')
     elif source == 'csv':
         products = read_csv_file('products.csv')
     else:
+        error = 'Wrong source. Please specify "json" or "csv".'
         raise 'Wrong source. Please specify "json" or "csv".'
-
-    return render_template('product_display.html', products=products)
+    
+    return render_template('product_display.html', products=products, error=error)
 @app.route('/')
 def home():
     return render_template('index.html')
