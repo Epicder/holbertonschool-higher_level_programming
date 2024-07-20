@@ -28,9 +28,9 @@ def display_products():
     elif source == 'csv':
         products = read_csv_file('products.csv')
     else:
-        raise 'Wrong source. Please specify "json" or "csv".'
+        error = 'Wrong source. Please specify "json" or "csv"'
 
-    return render_template('product_display.html', products=products)
+    return render_template('product_display.html', products=products, error=error)
 
 @app.route('/')
 def home():
